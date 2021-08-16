@@ -11,9 +11,9 @@ module.exports = {
      * 1、基本配置
      */
     // 网站的标题                       它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上。
-    title: 'VuePress Title 123',
+    title: 'Life is Wanwan',
     // 网站的描述                       它将会以 <meta> 标签渲染到当前页面的 HTML 中。
-    description: 'VuePress Description 123',
+    description: "Wan and Kai's technology blog",
     // 网站的基础路径                   以斜杠开始，并以斜杠结束。.vuepress/public 中的图片，你需要使用这样路径：/base路径/image.png。一个 base 路径一旦被设置，它将会自动地作为前缀插入到 .vuepress/config.js 中所有以 / 开始的资源路径中。
     base: '/',
     // dev server 主机名                默认值: '0.0.0.0'
@@ -44,9 +44,26 @@ module.exports = {
      * 2、主题配置
      */
     // 指定主题                         当你使用自定义主题的时候，需要指定它。默认值：undefined。参考：https://vuepress.vuejs.org/zh/theme/using-a-theme.html
-    theme: undefined,
+    theme: 'vuepress-theme-reco',       
     // 主题明细配置                     为当前的主题提供一些配置，这些选项依赖于你正在使用的主题。默认值：undefined。参考：https://vuepress.vuejs.org/zh/theme/default-theme-config.html
     themeConfig: {
+        // 主题类型
+        type: 'blog',
+        // 博客配置
+        blogConfig: {
+            // 导航栏——分类
+            category: {
+                // 位置
+                location: 2,    // 在导航栏菜单中所占的位置，默认2
+                // 文字内容
+                text: 'My Category' // 默认文案 “分类”
+            },
+            // 导航栏——标签
+            tag: {
+                location: 3,   // 在导航栏菜单中所占的位置，默认3
+                text: 'My Tag'      // 默认文案 “标签”
+            }
+        }
     },
 
     /**
@@ -78,12 +95,14 @@ module.exports = {
         },                
         // 目录                          ToC，Table of Contents。插件 markdown-it-table-of-contents 的选项。默认值: { includeLevel: [2, 3] }
         toc: {
-            includeLevel: [2, 3]
+            includeLevel: [1, 2]
         },
         // 安装 markdown-it 插件         你可以使用 markdown.plugins 来安装 markdown-it 插件。它的使用方法与安装一个 VuePress 插件类似。
         plugins: [],
         // 扩展 Markdown                 一个用于修改当前的 markdown-it (opens new window) 实例的默认配置，或者应用额外的插件的函数。默认值: undefined
-        extendMarkdown: undefined,
+        extendMarkdown: (md) => {
+            md.use(require('markdown-it'));
+        },
         // 提取标题                       Markdown 文件的 headers (标题 & 小标题) 会在准备阶段被提取出来，并存储在 this.$page.headers 中。默认情况下，VuePress 会提取 h2 和 h3 标题。你可以通过这个选项来修改提取出的标题级别。默认值: ['h2', 'h3']
         extractHeaders: [
             'h2',
