@@ -58,7 +58,7 @@
 | :i_day	    | 文章发布的日份 (前面不带0)                       |    
 | :slug	        | 蛞蝓化文件路径 (不带扩展名)                      |    
 | :regular	    | VuePress默认的生成永久链接的方式                 |    
- ::: tips
+ ::: tip
  这些模板变量主要用于给永久路径添加文章的年月日
  VuePress默认的生成永久链接的方式，具体实现看 https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/shared-utils/src/fileToPath.ts
 :::

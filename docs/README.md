@@ -16,18 +16,21 @@
 ########## 分割线 ##########
 
 # 第三方主题的配置
-home: true                      # 是否启用午后南杂的首页
-# heroImage: /hero.png          # 起风了，唯有努力生存
-# heroImageStyle: {
-#   maxWidth: '600px',
-#   width: '100%',
-#   display: block,
-#   margin: '9rem auto 2rem',
-#   borderRadius: '1rem',
-# }
-# bgImage: /theme.jpg           # banner 背景图
-# bgImageStyle: {
-#   height: '450px'
-# }
-isShowTitleInHome: false        # 是否在首页显示标题
+home: true                                            # 是否启用午后南杂的首页
+# heroText: "banner 大标题"                            # banner 大标题文字。无效
+heroImage: /img/banner-background-title.png            # banner 上的图片
+heroImageStyle: {
+  maxWidth: '888px',                                  
+  # maxHeight: '100px',
+  width: '100%',
+  display: block,
+  margin: '9rem auto 2rem',
+  borderRadius: '1rem',
+}
+bgImage: /img/banner-background-image.jpg             # banner 背景图
+bgImageStyle: {
+  height: '450px'
+}
+isShowTitleInHome: false                              # 是否在首页显示标题
+
 --- 
