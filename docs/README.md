@@ -25,7 +25,7 @@ heroImageStyle: {
   width: '100%',
   display: block,
   margin: '9rem auto 2rem',
-  borderRadius: '1rem',
+  borderRadius: '1rem', 
 }
 bgImage: /img/banner-background-image.jpg             # banner 背景图
 bgImageStyle: {
