@@ -93,11 +93,11 @@ module.exports = {
             }
         ],
         // 导航栏左侧 logo
-        logo: '/img/cat-run.jpeg',
+        logo: '/img/artifact-yi-qi-fa-dai.png',
         // 作者名称
         author: 'Kai',
         // 作者头像
-        authorAvatar: '/img/avatar-wechat.jpg',
+        authorAvatar: '/img/artifact-qi-che-dai-wan.png',
         // 博客配置
         blogConfig: {
             // 导航栏——分类
