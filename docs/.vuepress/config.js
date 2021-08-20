@@ -115,8 +115,14 @@ module.exports = {
         },
         // 首页显示华为文案
         huawei: false,
-        // 大标题测试
-        heroText: "大标题测试"      // 无效
+        // 大标题（测试）
+        heroText: "大标题测试",      // 无效
+        // 备案 
+        record: '浙ICP备2021008835号-1',                         // ICP 备案文案
+        recordLink: 'https://beian.miit.gov.cn/',               // ICP 备案指向链接
+        cyberSecurityRecord: '浙公网安备 33010602011711号',      // 公安部备案文案
+        cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602011711', // 公安部备案指向链接
+        startYear: '2021'                                       // 项目开始时间，只填写年份
 
 
     },
