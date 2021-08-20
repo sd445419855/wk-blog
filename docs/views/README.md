@@ -1,11 +1,19 @@
 ---
 title: docs/views 目录使用说明
+date: 2019-08-08                    # 文章创建日期，格式 2019-08-08 或 2019-08-08 08:08:08。
+sidebar: 'auto'                     # 是否开启侧边栏。
 categories:
-  - Guide Category
+  - 使用说明                         # FrontMatter专属数组写法
 tags:
-  - Guide Category
-publish: false                      # 出版、发布、发表，  这里不是 public
+  ['使用说明', 'views']                           # 普通数组写法
+publish: false                      # 文章是否发布（出版、发布、发表），  这里不是 public
+# keys:                             # 文章加密密码
+#  - '123456'
+# sticky: 999                       # 文章置顶，值为number类型，降序排序
 ---
+
+
+
 # 该目录用于存放网站要展示的各种文档，如前端技术、LeetCode等等
 
 
@@ -72,7 +80,7 @@ lang: en-US
 容器内容
 :::
 
-详见 [牛杂主题官方说明文档](https://vuepress.vuejs.org/zh/guide/markdown.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%B9%E5%99%A8)
+详见 [官方说明文档](https://vuepress.vuejs.org/zh/guide/markdown.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%B9%E5%99%A8) 和 [牛杂主题官方说明文档](https://vuepress-theme-reco.recoluan.com/views/1.x/syntax.html)
 
 ### 代码块中的语法高亮
 VuePress 使用了 Prism (opens new window) 来为 markdown 中的代码块实现语法高亮。Prism 支持大量的编程语言，你需要做的只是在代码块的开始倒勾中附加一个有效的语言别名：

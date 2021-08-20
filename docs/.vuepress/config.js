@@ -22,8 +22,8 @@ module.exports = {
     port: 8080,
     // 客户端文件的临时目录              默认值 /path/to/@vuepress/core/.temp
     temp: undefined,
-    // vuepress build 的输出目录        如果传相对路径，则会基于 process.cwd() 进行解析。默认值: .vuepress/dist
-    dest: undefined,
+    // vuepress build 的输出目录        如果传相对路径，则会基于 process.cwd() 进行解析发，即相对于 vuepress build ./docs 所指定的 ./docs 目录。默认值: .vuepress/dist
+    dest: './build',
     // 多语言支持的语言配置              默认值: undefined
     locales: undefined,
     // prefetch 资源提示                一个函数，用来控制对于哪些文件，是需要生成 <link rel="prefetch"> 资源提示的。默认值: () => true
