@@ -37,6 +37,7 @@ WebSocket 制作的简易聊天室 :house:
 <iframe 
   id="dd"
   width="100%" 
+  height="2160px"
   src="/HTML文章/为知笔记/WebSocket_基础知识/WebSocket_实战之即时通讯_简易聊天室.htm"  
   frameborder="0"  
   allowfullscreen="true"

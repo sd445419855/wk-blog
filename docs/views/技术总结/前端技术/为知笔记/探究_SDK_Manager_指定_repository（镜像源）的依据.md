@@ -16,6 +16,7 @@ publish: true                      # 文章是否发布（出版、发布、发�
 <iframe 
   id="dd"
   width="100%" 
+  height="2160px"
   src="/HTML文章/为知笔记/WebSocket_基础知识/探究_SDK_Manager_指定_repository（镜像源）的依据.htm"  
   frameborder="0"  
   allowfullscreen="true"

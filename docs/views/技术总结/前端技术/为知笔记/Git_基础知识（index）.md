@@ -15,6 +15,7 @@ sticky: 998                       # 文章置顶，值为number类型，降序�
 <iframe 
   id="dd"
   width="100%" 
+  height="2160px"
   src="/HTML文章/为知笔记/WebSocket_基础知识/Git_基础知识（index）.htm"  
   frameborder="0"  
   allowfullscreen="true"
